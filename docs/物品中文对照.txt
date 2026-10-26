@@ -1,0 +1,234 @@
+# The Forest 物品中文对照表
+# 格式：英文名 <TAB> 中文名      以 # 开头的行忽略
+# 改完保存，重启游戏即生效（插件热加载，不用重新编译）
+AirCanister	空气罐
+Aloe	芦荟
+AnimalHead_Boar	野猪头（战利品）
+AnimalHead_Crocodile	鳄鱼头（战利品）
+AnimalHead_Deer	鹿头（战利品）
+AnimalHead_Goose	鹅头（战利品）
+AnimalHead_Lizard	蜥蜴头（战利品）
+AnimalHead_rabbit	兔子头（战利品）
+AnimalHead_Racoon	浣熊头（战利品）
+AnimalHead_Seagul	海鸥头（战利品）
+AnimalHead_Shark	鲨鱼头（战利品）
+AnimalHead_Squirrel	松鼠头（战利品）
+AnimalHead_Tortoise	陆龟头（战利品）
+Arm	手臂（残肢）
+Arrows	箭
+ArtifactBall	神器圆球
+artifactKey	神器钥匙
+ArtifactPhoto	神器照片
+Axe Climbing	攀爬斧
+Axe Plane	木工斧
+AxeCrafted	自制斧
+AxeModern	现代斧
+AxeRusty	锈蚀斧
+Battery	电池
+Bible	圣经
+BiblePage1	圣经书页 1
+BiblePage2	圣经书页 2
+BiblePage3	圣经书页 3
+BlackBerry	黑莓
+BlueBerry	蓝莓
+BluePaint	蓝色颜料
+BoarSkin	野猪皮
+BombTimed	定时炸弹
+bone	骨头
+BoneArmor	骨制护甲
+BookDarkHaired	黑发女孩的书
+Booze	酒
+Bow	弓
+BowCross	弩
+Camcorder	摄像机
+CamcorderTape1	摄像机磁带 1
+CamcorderTape2	摄像机磁带 2
+CamcorderTape3	摄像机磁带 3
+CamcorderTape4	摄像机磁带 4
+CamcorderTape5	摄像机磁带 5
+CamcorderTape6	摄像机磁带 6
+Cash	现金
+Cassette 1	磁带 1
+Cassette 2	磁带 2
+Cassette 3	磁带 3
+Cassette 4	磁带 4
+Cassette 5	磁带 5
+CaveMap	洞穴地图
+CBoard	木板
+Chainsaw	电锯
+ChainsawAd	电锯广告单
+Chicory	菊苣
+ChocolateBar	巧克力棒
+Cloth	布
+Club	木棒
+ClubCrafted	自制木棒
+Cod	鳕鱼
+Coins	硬币
+Compass	指南针
+ConeFlower	紫锥花
+CreepyHead_Armsy	变异头（多臂怪）
+CreepyHead_Baby	变异头（婴儿怪）
+CreepyHead_Fat	变异头（胖子怪）
+CreepyHead_Vag	变异头（女妖）
+CreepySkin	变异皮肤
+Cross	十字架
+CrossbowAmmo	弩箭
+DeerSkin	鹿皮
+dynamite	炸药
+EmailPhoto	邮件照片
+EmailPlane	邮件（客机）
+EnergyMix	能量饮料
+EnergyMixPlus	加强能量饮料
+Feather	羽毛
+FireStick	钻火棍
+Flare	信号棒
+FlareGun	信号枪
+FlareGunAmmo	信号枪弹
+FlintLock	燧发枪
+FlintLock part 1	燧发枪零件 1
+FlintLock part 2	燧发枪零件 2
+FlintLock part 3	燧发枪零件 3
+FlintLock part 4	燧发枪零件 4
+FlintLock part 5	燧发枪零件 5
+FlintLock part 6	燧发枪零件 6
+FlintLock part 7	燧发枪零件 7
+FlintLock part 8	燧发枪零件 8
+flintlockAmmo	燧发枪弹药
+fortune	幸运符
+Fuel	燃料
+GenericMeat	生肉
+Glass	玻璃
+Hairspray	发胶
+Head	头颅（残肢）
+HeadBomb	头颅炸弹
+Katana	武士刀
+Keycard	门禁卡
+KeycardElevator	电梯门禁卡
+Leaf	树叶
+Leg	腿（残肢）
+Lighter	打火机
+Lizard	蜥蜴
+LizardSkin	蜥蜴皮
+Log	原木
+Machete	砍刀
+Magazine	杂志
+MagazineCaver	杂志（洞穴探险者）
+MagazineLimestone	杂志（石灰岩）
+Magazine_reality	杂志（现实）
+Magazine_science	杂志（科学）
+MapFull	完整地图
+MapPiece_1	地图碎片 1
+MapPiece_2	地图碎片 2
+MapPiece_3	地图碎片 3
+MapPiece_4	地图碎片 4
+Map_Cave2	洞穴地图 2
+Marigold	金盏花
+MedicineCrafted	自制药品
+MedicineCraftedPlus	加强自制药品
+Meds	药物
+MeganCrayons	梅根的蜡笔
+MeganDrawingDaddy	梅根的画（爸爸）
+MeganDrawingDino	梅根的画（恐龙）
+MeganDrawingFlower	梅根的画（花）
+MeganDrawingUnicorn	梅根的画（独角兽）
+MetalTinTray	金属托盘
+MilkCarton	牛奶盒
+Molotov	燃烧瓶
+MorgueReport	尸检报告
+MushroomAmanita	蘑菇（毒蝇伞·有毒）
+MushroomChanterelle	蘑菇（鸡油菌）
+MushroomDeerMush	蘑菇（鹿角菌）
+MushroomJack	蘑菇（杰克菇）
+MushroomLibertyCap	蘑菇（自由帽·有毒）
+MushroomPuffmush	蘑菇（马勃）
+NewspaperStripper	报纸（脱衣舞者）
+OrangePaint	橙色颜料
+Oyster	牡蛎
+PageChurch	书页（教堂）
+PageGlider	书页（滑翔机）
+PageRollercoaster	书页（过山车）
+PageTower	书页（塔楼）
+PaintBrush	画笔
+PassengerManifest	乘客名单
+Pedometer	计步器
+PhotoCache1	照片收藏 1
+PhotoCache2	照片收藏 2
+PhotoCache3	照片收藏 3
+PhotoCache4	照片收藏 4
+PhotoCache5	照片收藏 5
+PhotoCache6	照片收藏 6
+PhotoCache8	照片收藏 8
+PhotoCache9	照片收藏 9
+PhotoTimmy	蒂米的照片
+PlaneFood	飞机餐
+PlasticTorch	塑料火把
+PlasticTorch_Bow	塑料火把（弓）
+PlasticTorch_Chainsaw	塑料火把（电锯）
+PlasticTorch_Flintlock	塑料火把（燧发枪）
+PlasticTorch_ModernBow	塑料火把（现代弓）
+PolaroidKeyCard1	拍立得门禁卡 1
+PolaroidKeyCard2	拍立得门禁卡 2
+PolaroidKeyCard3	拍立得门禁卡 3
+PolaroidMegan	拍立得（梅根）
+PolaroidTeddy	拍立得（泰迪）
+PolaroidVagz	拍立得（女妖）
+PolaroidYacht	拍立得（游艇）
+Pot	炖锅
+Pouch	小袋
+Quiver	箭袋
+Rabbit Alive	活兔子
+Rabbit Dead	死兔子
+RabbitFurBoots	兔毛靴
+RabbitSkin	兔皮
+RacoonSkin	浣熊皮
+Rebreather	呼吸器
+RecurveBow	反曲弓
+RepairTool	修理工具
+RestrainingOrder	限制令
+Rock	石头
+RockBag	石头背包
+RockUpgraded	强化石头
+Rope	绳子
+Seed_Aloe	芦荟种子
+Seed_BlueBerry	蓝莓种子
+Seed_Coneflower	紫锥花种子
+shippingManifest	货运清单
+SketchArtifact	神器草图
+SketchArtifact4	神器草图 4
+SketchSinkhole	草图（天坑）
+SketchVagz	草图（女妖）
+Skull	头骨
+Slingshot	弹弓
+Small Rock	小石头
+SmallGenericMeat	小块生肉
+SmallRockBag	小石头背包
+SnowBerry	雪莓
+SnowShoes	雪地鞋
+Soda	汽水
+Spear	长矛
+SpearBag	长矛袋
+SpearUpgraded	强化长矛
+StealthArmor	匿踪护甲
+Stick	树枝
+StickBag	树枝背包
+StickUpgraded	强化树枝
+SurvivalBook	生存手册
+TapeSticky	黏胶带
+Tennis Ball	网球
+TennisRaquet	网球拍
+TerminationLetter	解雇信
+TimmyDrawing	蒂米的画
+Tooth	牙齿
+ToyFull	玩具（完整）
+Toy_Arm	玩具（手臂）
+Toy_Head	玩具（头部）
+Toy_Leg	玩具（腿）
+Toy_Torso	玩具（躯干）
+TreeSap	树液
+TurtleShell	龟壳
+twinberry	双生莓
+Walkman	随身听
+WalkyTalky	对讲机
+Warmsuit	保暖服
+Watch	手表
+Waterskin	水袋

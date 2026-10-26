@@ -1,0 +1,24 @@
+# 构建产物
+bin/
+obj/
+dist/
+*.dll
+*.pdb
+*.zip
+
+# 运行时数据（由插件生成）
+diag.txt
+forestcheat_diag.txt
+物品清单.txt
+坐标收藏.txt
+LogOutput.log
+
+# 编辑器
+.vs/
+.vscode/
+*.user
+*.suo
+
+# 系统
+Thumbs.db
+desktop.ini
