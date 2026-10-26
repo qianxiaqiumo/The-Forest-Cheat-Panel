@@ -929,11 +929,39 @@ namespace ForestCheat
             }
             catch { }
 
-            GUI.skin.label.fontSize = 13;
             bool closeRequested = false;
-            var origLabelColor = GUI.skin.label.normal.textColor;            var origBoxColor = GUI.skin.box.normal.textColor;
-            GUI.skin.label.normal.textColor = new Color(0.08f, 0.08f, 0.10f);
-            GUI.skin.box.normal.textColor = new Color(0.08f, 0.08f, 0.10f);
+
+            // 统一深色文字（否则白底上开关标签是白字，完全看不见）
+            var origLabelColor = GUI.skin.label.normal.textColor;
+            var origLabelSize = GUI.skin.label.fontSize;
+            var origBoxColor = GUI.skin.box.normal.textColor;
+            var origToggleColor = GUI.skin.toggle.normal.textColor;
+            var origToggleHover = GUI.skin.toggle.hover.textColor;
+            var origToggleActive = GUI.skin.toggle.active.textColor;
+            var origToggleSize = GUI.skin.toggle.fontSize;
+            var origToggleStyle = GUI.skin.toggle.fontStyle;
+            var origBtnColor = GUI.skin.button.normal.textColor;
+            var origBtnSize = GUI.skin.button.fontSize;
+            var origFieldColor = GUI.skin.textField.normal.textColor;
+            var origFieldSize = GUI.skin.textField.fontSize;
+
+            var dark = new Color(0.06f, 0.06f, 0.08f);
+            GUI.skin.label.normal.textColor = dark;
+            GUI.skin.label.fontSize = 13;
+            GUI.skin.label.fontStyle = FontStyle.Bold;
+            GUI.skin.box.normal.textColor = dark;
+            GUI.skin.toggle.normal.textColor = dark;
+            GUI.skin.toggle.hover.textColor = dark;
+            GUI.skin.toggle.active.textColor = dark;
+            GUI.skin.toggle.fontSize = 13;
+            GUI.skin.toggle.fontStyle = FontStyle.Bold;
+            GUI.skin.button.normal.textColor = dark;
+            GUI.skin.button.hover.textColor = dark;
+            GUI.skin.button.active.textColor = dark;
+            GUI.skin.button.fontSize = 13;
+            GUI.skin.button.fontStyle = FontStyle.Bold;
+            GUI.skin.textField.normal.textColor = dark;
+            GUI.skin.textField.fontSize = 13;
 
             float w = Mathf.Min(430f, Screen.width - 40f);
             float h = Mathf.Min(780f, Screen.height - 40f);
@@ -1118,7 +1146,17 @@ namespace ForestCheat
             GUILayout.EndArea();
 
             GUI.skin.label.normal.textColor = origLabelColor;
+            GUI.skin.label.fontSize = origLabelSize;
             GUI.skin.box.normal.textColor = origBoxColor;
+            GUI.skin.toggle.normal.textColor = origToggleColor;
+            GUI.skin.toggle.hover.textColor = origToggleHover;
+            GUI.skin.toggle.active.textColor = origToggleActive;
+            GUI.skin.toggle.fontSize = origToggleSize;
+            GUI.skin.toggle.fontStyle = origToggleStyle;
+            GUI.skin.button.normal.textColor = origBtnColor;
+            GUI.skin.button.fontSize = origBtnSize;
+            GUI.skin.textField.normal.textColor = origFieldColor;
+            GUI.skin.textField.fontSize = origFieldSize;
 
             if (closeRequested) ToggleMenu();
         }
