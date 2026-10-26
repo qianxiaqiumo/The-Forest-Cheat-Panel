@@ -1,0 +1,124 @@
+﻿=== PlayerStats 类型 ===
+PlayerStats
+--- 字段 ---
+Single BodyTemp
+Int32 HeartRate
+Int32 GreyZoneThreshold
+Single Stamina
+Single Health
+Single HealthTarget
+Single Energy
+Int32 Armor
+ArmorTypes[] CurrentArmorTypes
+Int32 ArmorVis
+Single ColdArmor
+Single BatteryCharge
+Single Stealth
+Single SoundRangeDampFactor
+Single Flammable
+Single DaySurvived
+Single NextSleepTime
+Boolean Dead
+Single Fullness
+Single Thirst
+Single Starvation
+Single StarvationCurrentDuration
+Single ThirstCurrentDuration
+StarvationSettingsData StarvationSettings
+ThirstSettingsData ThirstSettings
+FrostSettingsData FrostDamageSettings
+AirBreathingData AirBreathing
+FuelData Fuel
+CarriedWeightData CarriedWeight
+hairsprayFuelData hairSprayFuel
+SkillData Skills
+SanityData Sanity
+PhysicalStrengthData PhysicalStrength
+CaloriesSystemData Calories
+InfectionData FoodPoisoning
+InfectionData BloodInfection
+Int32 PedometerSteps
+ArmorSet[] ArmorSets
+GameObject[] ArmorModel
+GameObject[] LeafArmorModel
+GameObject[] BoneArmorModel
+GameObject[] CreepyArmorModel
+GameObject WarmsuitModel
+Renderer MyBody
+Renderer[] clothes
+GameObject WakeMusic
+GameObject PlayerFlames
+Single HitRumbleStrength
+Single HitRumbleDuration
+String GaspForAirEvent
+String RebreatherEvent
+String DrowningEvent
+String DyingEvent
+String DragCutsceneEvent
+String ExtinguishEvent
+String ApplyRedPaintEvent
+String ApplyMudEvent
+Boolean coldSwitch
+LayerMask dragAwayCullingMask
+GameObject sticksGreeble
+Single blockDamagePercent
+Int32 PlayerVariation
+Int32 PlayerVariationBody
+Int32 PlayerVariationTShirtType
+Int32 PlayerVariationTShirtMat
+Int32 PlayerVariationPantsType
+Int32 PlayerVariationPantsMat
+Int32 PlayerVariationHair
+PlayerCloting PlayerVariationExtras
+Int32 PlayerClothingVariation
+--- 属性 ---
+Single StealthFinal
+Boolean Warmsuit
+Frost FrostScript
+Boolean IsBloody
+Boolean IsMuddy
+Boolean IsRed
+Boolean IsCold
+Boolean IsHealthInGreyZone
+Boolean IsBurning
+Boolean IsFightingBoss
+Boolean useGUILayout
+Boolean enabled
+Boolean isActiveAndEnabled
+Transform transform
+GameObject gameObject
+String tag
+String name
+HideFlags hideFlags
+=== 物品相关类型 ===
+CoopItemHolderDynamic
+artifactInventorySync
+inventoryItemSpreadSetup
+inventoryItemSpreadTrigger
+ItemHolder
+TheForest.Buildings.World.MultiItemHolder
+TheForest.Buildings.World.MultiItemHolderSlotProxy
+TheForest.Buildings.World.MultiThrowerItemHolder
+rockThrowerItemHolder
+HudGui+InventoryItemInfo
+HudGui+InventoryItemInfoView
+InventoryFakeGround
+InventoryImageEffectOptimizer
+TheForest.Items.ItemDatabase
+TheForest.Items.Core.ItemStorage+InventoryItemX
+TheForest.Items.Inventory.DecayingInventoryItemView
+TheForest.Items.Inventory.DrawingsInventoryItemView
+TheForest.Items.Inventory.IInventoryItemFilter
+TheForest.Items.Inventory.IItemPartInventoryView
+TheForest.Items.Inventory.InventoryItem
+TheForest.Items.Inventory.InventoryItemFilter_Unlimited
+TheForest.Items.Inventory.InventoryItemView
+TheForest.Items.Inventory.InventoryItemViewProxy
+TheForest.Items.Inventory.MapInventoryItemView
+OptionsInventoryView
+TheForest.Items.Inventory.PlayerInventory
+TheForest.Items.Inventory.RobotInventoryItemView
+TheForest.Items.Inventory.WaterSkinInventoryItemView
+TheForest.Player.Clothing.ClothingInventoryView
+TheForest.Player.Clothing.ClothingItemDatabase
+VRInventoryTreeDisabler

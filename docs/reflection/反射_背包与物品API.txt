@@ -1,0 +1,143 @@
+﻿=== LocalPlayer 静态成员 ===
+Method get_ActiveBurnableItem
+Method set_ActiveBurnableItem
+Method get_IsInCaves
+Method get_IsInEndgame
+Method get_IsInOverlookArea
+Method get_IsInOutsideWorld
+Method get_IsInClosedArea
+Method get_IsInWorld
+Method get_IsInInventory
+Method get_IsInBook
+Method get_IsInPauseMenu
+Method get_CurrentView
+Property ActiveBurnableItem
+Property IsInCaves
+Property IsInEndgame
+Property IsInOverlookArea
+Property IsInOutsideWorld
+Property IsInClosedArea
+Property IsInWorld
+Property IsInInventory
+Property IsInBook
+Property IsInPauseMenu
+Property CurrentView
+Field Transform
+Field Rigidbody
+Field GameObject
+Field PlayerBase
+Field HeadTr
+Field HipsTr
+Field Inventory
+Field ReceipeBook
+Field SpecialActions
+Field SpecialItems
+Field MainCamTr
+Field MainCam
+Field InventoryCam
+Field ImageEffectOptimizer
+Field CamFollowHead
+Field Animator
+Field AnimControl
+Field Grabber
+Field Create
+Field Tuts
+Field Sfx
+Field Stats
+Field Clothing
+Field FpCharacter
+Field FpHeadBob
+Field CamRotator
+Field MainRotator
+Field ScriptSetup
+Field TargetFunctions
+Field HitReactions
+Field Buoyancy
+Field Entity
+Field State
+Field WaterViz
+Field AiInfo
+Field WaterEngine
+Field ItemDecayMachine
+Field AnimatedBook
+Field PassengerManifest
+Field GreebleRoot
+Field MudGreeble
+Field PlayerDeadCam
+Field PauseMenuBlur
+Field PauseMenuBlurPsCam
+Field LeftHandTrVR
+Field RightHandTrVR
+Field WatchTrVR
+Field InventoryPositionVR
+Field HeldItemsData
+Field Vis
+Field ActiveAreaInfo
+Field PlayerPushSledAction
+Field SurfaceDetector
+Field RepairTool
+Field Achievements
+Field QuickSelectViews
+Field MapDrawer
+Field ItemSlots
+Field vrAdapter
+Field vrPlayerControl
+Field vrVignette
+Field InventoryMouseEventsVR
+Field FakeCaveVR
+Field SavedData
+NestedType SavedDataFields
+=== TheForest.Items.Inventory.PlayerInventory ===
+ItemsUpgradeCountersDict get_ItemsUpgradeCounters()
+Void set_ItemsUpgradeCounters(ItemsUpgradeCountersDict value)
+Boolean get_BlockTogglingInventory()
+Boolean get_QuickSelectGamepadSwitch()
+Boolean get_IsWeaponBurning()
+Boolean get_CancelNextChargedAttack()
+Boolean get_SkipNextAddItemWoosh()
+Void set_SkipNextAddItemWoosh(Boolean value)
+Boolean get_DontShowDrop()
+Boolean get_BlockDrop()
+String get_PendingSendMessage()
+Single get_WeaponChargeStartTime()
+Boolean get_IsReloading()
+Boolean get_IsThrowing()
+Boolean get_UseAltWorldPrefab()
+Boolean get_IsOpenningInventory()
+Boolean get_blockRangedAttack()
+IItemStorage get_CurrentStorage()
+IInventoryItemFilter get_ItemFilter()
+Void set_ItemFilter(IInventoryItemFilter value)
+PlayerViews get_CurrentView()
+Void MemorizeItem(EquipmentSlot slot)
+Void MemorizeOverrideItem(EquipmentSlot slot)
+Boolean AddItem(Int32 itemId, Int32 amount, Boolean preventAutoEquip, Boolean fromCraftingCog, ItemProperties properties)
+Boolean AddItemNF(Int32 itemId, Int32 amount, Boolean preventAutoEquip, Boolean fromCraftingCog, ItemProperties properties)
+Boolean RemoveItem(Int32 itemId, Int32 amount, Boolean allowAmountOverflow, Boolean shouldEquipPrevious)
+Boolean RemoveItemNF(Int32 itemId, Int32 amount, Boolean allowAmountOverflow, Boolean shouldEquipPrevious)
+Boolean HasOwned(Int32 itemId)
+Boolean HasInSlot(EquipmentSlot slot, Int32 itemId)
+Boolean HasInPreviousSlot(EquipmentSlot slot, Int32 itemId)
+Boolean HasInNextSlot(EquipmentSlot slot, Int32 itemId)
+Boolean HasInSlotOrNextSlot(EquipmentSlot slot, Int32 itemId)
+Boolean HasRoomFor(Int32 itemId, Int32 amount)
+Void AddMaxAmountBonus(Int32 itemId, Int32 amount)
+Int32 GetMaxAmountOf(Int32 itemId)
+Void HighlightItemGroup(InventoryItemView view, Boolean onoff)
+Void HighlightItemGroup(Int32 itemId, ItemProperties properties, Boolean onoff)
+Void SheenItem(Int32 itemId, ItemProperties properties, Boolean onoff)
+InventoryItemView GetLastActiveView(Int32 itemId)
+Boolean ShuffleRemoveRightHandItem()
+=== TheForest.Items.ItemDatabase ===
+Item[] get_Items()
+Boolean IsItemidValid(Int32 id)
+Item ItemById(Int32 id)
+Int32 ItemIndexById(Int32 id)
+Int32 ItemIndexByName(String name)
+Int32 ItemIdByName(String name)
+Item ItemByName(String name)
+IEnumerable`1 ItemsByType(Types typeMask)
+=== ItemHolder ===
+Void TakeItemMP(BoltEntity targetPlayer)
+Void AddItemMP(BoltConnection source)
+Void forceRemoveItem()

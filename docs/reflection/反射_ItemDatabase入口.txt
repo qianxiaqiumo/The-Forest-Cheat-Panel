@@ -1,0 +1,5 @@
+﻿=== 名为 ItemProperties 的类型 ===
+TheForest.Items.Inventory.ItemProperties base=Object isValueType=False
+=== 静态成员里出现 ItemDatabase 的 ===
+FIELD  TheForest.Items.ItemDatabase._instance
+=== 返回 ItemDatabase 的方法（前20） ===

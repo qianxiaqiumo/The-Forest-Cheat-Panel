@@ -1,0 +1,54 @@
+﻿=== TheForest.Items.ItemDatabase  (base=ScriptableObject) ===
+-- 静态 --
+  Method get_Items
+  Method IsItemidValid
+  Method ItemById
+  Method ItemIndexById
+  Method ItemIndexByName
+  Method ItemIdByName
+  Method ItemByName
+  Method ItemsByType
+  Property Items
+-- 实例字段/属性 --
+  F Int32 _lastId
+  F Item[] _items
+  P String name
+  P HideFlags hideFlags
+=== TheForest.Items.Item  (base=Object) ===
+-- 静态 --
+  NestedType Types
+  NestedType EquipmentSlot
+  NestedType AnimatorVariables
+  NestedType RangedStyle
+  NestedType SFXCommands
+  NestedType FSMEvents
+  NestedType Pools
+  NestedType ItemPrefabs
+  NestedType PrefabPerBonus
+-- 实例字段/属性 --
+  F Int32 _id
+  F Types _type
+  F String _name
+  F Boolean _allowQuickSelect
+  F Single _weight
+  F Int32 _maxAmount
+  F Boolean _inventoryTooltipOnly
+  F Boolean _preventClosingInventoryAfterEquip
+  F Int32[] _fallbackItemIds
+  F StatEffect[] _ownedStatEffect
+  F Int32 _maxUpgradesAmount
+  F EquipmentSlot _equipmentSlot
+  F AnimatorVariables[] _equipedAnimVars
+  F StatEffect[] _equipedStatEffect
+  F Single _unequipDelay
+  F Boolean _blockPutAway
+  F Boolean _VRBlockPutAway
+  F Int32 _rechargeOfItemId
+  F Types _edibleCondition
+  F Types _altEdibleCondition
+  F Types _secondaryEdibleCondition
+  F Types _secondaryAltEdibleCondition
+  F StatEffect[] _usedStatEffect
+  F SFXCommands _equipedSFX
+  F SFXCommands _usedSFX
+!! TheForest.Items.ItemProperties 未找到
