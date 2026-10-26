@@ -65,6 +65,8 @@ powershell -ExecutionPolicy Bypass -File .\build.ps1 -GameDir "D:\SteamLibrary\s
 | `物品清单.txt` | 从游戏导出的物品 ID 与名称对照，首次刷新列表时生成 |
 | `物品中文对照.txt` | 想改某个物品的中文叫法就在这里加一行 `英文名<TAB>中文名`，重启游戏生效 |
 
+> 231 种物品的中文名已**内置在代码里**，开箱即用；这个 txt 只是可选的覆盖/扩展。
+
 调试日志：`<游戏目录>\BepInEx\forestcheat_diag.txt`
 
 ## 排错
@@ -98,8 +100,8 @@ Press **F7** in game.
 - **Movement**: speed & jump multipliers
 - **Coordinates**: live XYZ readout, teleport to typed coordinates
 - **Waypoints**: unlimited, custom names, persisted to `BepInEx\config\坐标收藏.txt`
-- **Item spawning**: reads the game's `ItemDatabase` (231 items), displays Chinese names,
-  bilingual search, "give every item" batch button, item list export
+- **Item spawning**: reads the game's `ItemDatabase` (231 items), ships with **built-in
+  Chinese names**, bilingual search, "give every item" batch button, item list export
 
 Everything is done through reflection against `LocalPlayer` / `PlayerStats` /
 `PlayerInventory` / `ItemDatabase` — **no game files are modified or decompiled**.
