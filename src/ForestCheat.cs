@@ -87,6 +87,7 @@ namespace ForestCheat
         private bool _diagUpdate, _diagOnGui;
         private GUIStyle _panelStyle;
         private object _camRotator;
+        private Behaviour _virtualCursor;
 
         private GUIStyle PanelStyle()
         {
@@ -162,6 +163,9 @@ namespace ForestCheat
                 // 游戏自己的 Update 会反复把鼠标锁回去，这里只是提前释放一下，
                 // 真正的强制解锁在 OnGUI 里每帧执行
                 try { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; } catch { }
+                // 关键：游戏的 VirtualCursor.LateUpdate 每帧都会把光标锁回屏幕中间，
+                // 不关掉它，鼠标就永远卡在中心（按 ESC 能恢复，就是因为 ESC 会关掉它）
+                SetVirtualCursor(false);
                 // 暂停游戏（持续强制，防止被游戏改回去）
                 if (pauseOnMenu && Time.timeScale > 0.0001f)
                 {
@@ -201,6 +205,7 @@ namespace ForestCheat
                 if (Time.timeScale > 0.0001f) _savedTimeScale = Time.timeScale;
                 if (pauseOnMenu) Time.timeScale = 0f;
                 SetLookActive(false);
+                SetVirtualCursor(false);
                 try { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; } catch { }
             }
             else
@@ -208,6 +213,7 @@ namespace ForestCheat
                 float restore = _savedTimeScale > 0.0001f ? _savedTimeScale : 1f;
                 Time.timeScale = restore;
                 SetLookActive(true);
+                SetVirtualCursor(true);
                 SetViewLock(true);
                 try { Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false; } catch { }
             }
@@ -423,6 +429,30 @@ namespace ForestCheat
                 if (m != null) m.Invoke(_fp, null);
             }
             catch { }
+        }
+
+        // 菜单打开期间把游戏的 VirtualCursor 组件关掉（它每帧都把光标锁回中心）
+        private void SetVirtualCursor(bool active)
+        {
+            try
+            {
+                if (_virtualCursor == null)
+                {
+                    var t = FindType("TheForest.UI.VirtualCursor");
+                    if (t != null)
+                    {
+                        var found = UnityEngine.Object.FindObjectOfType(t);
+                        _virtualCursor = found as Behaviour;
+                        Diag("VirtualCursor 查找: " + (t != null ? t.FullName : "null") + " 实例=" + (_virtualCursor != null));
+                    }
+                }
+                if (_virtualCursor != null && _virtualCursor.enabled != active)
+                {
+                    _virtualCursor.enabled = active;
+                    Diag("VirtualCursor.enabled = " + active);
+                }
+            }
+            catch (Exception e) { Diag("SetVirtualCursor 异常: " + e.Message); }
         }
 
         // 菜单打开时暂时关掉相机旋转组件，这样移动鼠标点按钮不会带着视角乱转
