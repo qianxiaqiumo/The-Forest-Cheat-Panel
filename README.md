@@ -7,6 +7,8 @@
 ![面板截图](docs/screenshot.png)
 
 > 非官方项目，与开发商 Endnight Games 无任何关联。仅供单机自用/学习交流。
+>
+> 本项目基于 MIT 协议**免费开源**，请勿用于商业售卖。
 
 ## 功能
 
@@ -94,6 +96,9 @@ MIT。BepInEx 为 LGPL-2.1，本项目仅依赖它，不包含其源码。
 
 In-game cheat panel for **The Forest** (Unity 5.6 / Mono), loaded by **BepInEx 5**.
 Press **F7** in game.
+
+> Unofficial project, not affiliated with Endnight Games. MIT licensed and **free to use** —
+> please do not sell it.
 
 - **God mode**: health, armor, no bleeding, no cold, no fall damage
 - **Locks**: stamina, energy, fullness, thirst, starvation, battery
