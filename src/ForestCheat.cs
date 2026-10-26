@@ -95,7 +95,7 @@ namespace ForestCheat
             {
                 _panelStyle = new GUIStyle(GUI.skin.box);
                 var tex = new Texture2D(1, 1);
-                tex.SetPixel(0, 0, new Color(0.94f, 0.95f, 0.97f, 0.95f));
+                tex.SetPixel(0, 0, new Color(0.97f, 0.975f, 1f, 1f));
                 tex.Apply();
                 _panelStyle.normal.background = tex;
                 _panelStyle.padding = new RectOffset(12, 12, 10, 10);
@@ -936,6 +936,9 @@ namespace ForestCheat
             var origLabelSize = GUI.skin.label.fontSize;
             var origBoxColor = GUI.skin.box.normal.textColor;
             var origToggleColor = GUI.skin.toggle.normal.textColor;
+            var origToggleOn = GUI.skin.toggle.onNormal.textColor;
+            var origToggleOnHover = GUI.skin.toggle.onHover.textColor;
+            var origToggleOnActive = GUI.skin.toggle.onActive.textColor;
             var origToggleHover = GUI.skin.toggle.hover.textColor;
             var origToggleActive = GUI.skin.toggle.active.textColor;
             var origToggleSize = GUI.skin.toggle.fontSize;
@@ -953,6 +956,10 @@ namespace ForestCheat
             GUI.skin.toggle.normal.textColor = dark;
             GUI.skin.toggle.hover.textColor = dark;
             GUI.skin.toggle.active.textColor = dark;
+            // 关键：勾选状态用的是 onNormal 等其他三个状态，不设就还是白字
+            GUI.skin.toggle.onNormal.textColor = dark;
+            GUI.skin.toggle.onHover.textColor = dark;
+            GUI.skin.toggle.onActive.textColor = dark;
             GUI.skin.toggle.fontSize = 13;
             GUI.skin.toggle.fontStyle = FontStyle.Bold;
             GUI.skin.button.normal.textColor = dark;
@@ -1149,6 +1156,9 @@ namespace ForestCheat
             GUI.skin.label.fontSize = origLabelSize;
             GUI.skin.box.normal.textColor = origBoxColor;
             GUI.skin.toggle.normal.textColor = origToggleColor;
+            GUI.skin.toggle.onNormal.textColor = origToggleOn;
+            GUI.skin.toggle.onHover.textColor = origToggleOnHover;
+            GUI.skin.toggle.onActive.textColor = origToggleOnActive;
             GUI.skin.toggle.hover.textColor = origToggleHover;
             GUI.skin.toggle.active.textColor = origToggleActive;
             GUI.skin.toggle.fontSize = origToggleSize;
